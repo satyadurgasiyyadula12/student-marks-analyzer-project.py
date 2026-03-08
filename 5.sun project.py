@@ -66,24 +66,26 @@ print("average marks:",avg)
 
 
 #pass fail marks
+print("passed:",end=" ")
 for n in m:
     if n  >= 35 :
-        print("pass",n)
-    else:
-        print("failed",n)
+        print(n,end=" ")
+print()
 
-"""
-output: enter marks:28 36 90 98 37 99 17
-highest marks: 99
-Lowest marks: 17
-average marks: 57.857142857142854
-failed 28
-pass 36
-pass 90
-pass 98
-pass 37
-pass 99
-failed 17
+print("fail:",end=" ")
+for n in m:
+    if n  <= 35 :
+        print(n,end=" ")
+print()
+    
+
+"""output:
+enter marks:16 80 23 36 78 89
+highest marks: 89
+Lowest marks: 16
+average marks: 53.666666666666664
+passed: 80 36 78 89 
+fail: 16 23 
 
 
 """
